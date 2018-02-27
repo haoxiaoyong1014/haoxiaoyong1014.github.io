@@ -86,7 +86,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/02/26/postName/index.html">
 <meta property="og:site_name" content="郝小永的博客">
 <meta property="og:description" content="一、简介HttpClient是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。HttpClient已经应用在很多的项目中，比如Apache Jakarta上很著名的另外两个开源项目Cactus和HTMLUnit都使用了HttpClient。 下载地址: http://hc.apach">
-<meta property="og:updated_time" content="2018-02-27T05:29:44.000Z">
+<meta property="og:updated_time" content="2018-02-27T07:50:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HttpClient详解">
 <meta name="twitter:description" content="一、简介HttpClient是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。HttpClient已经应用在很多的项目中，比如Apache Jakarta上很著名的另外两个开源项目Cactus和HTMLUnit都使用了HttpClient。 下载地址: http://hc.apach">
@@ -377,15 +377,15 @@
 <li><p>释放连接。无论执行方法是否成功，都必须释放连接<br><strong>四、实例</strong><br>package com.test;  </p>
 </li>
 </ol>
-<p>import java.io.File;<br>import java.io.FileInputStream;<br>import java.io.IOException;<br>import java.io.UnsupportedEncodingException;<br>import java.security.KeyManagementException;<br>import java.security.KeyStore;<br>import java.security.KeyStoreException;<br>import java.security.NoSuchAlgorithmException;<br>import java.security.cert.CertificateException;<br>import java.util.ArrayList;<br>import java.util.List;<br>import javax.net.ssl.SSLContext;<br>import org.apache.http.HttpEntity;<br>import org.apache.http.NameValuePair;<br>import org.apache.http.ParseException;<br>import org.apache.http.client.ClientProtocolException;<br>import org.apache.http.client.entity.UrlEncodedFormEntity;<br>import org.apache.http.client.methods.CloseableHttpResponse;<br>import org.apache.http.client.methods.HttpGet;<br>import org.apache.http.client.methods.HttpPost;<br>import org.apache.http.conn.ssl.SSLConnectionSocketFactory;<br>import org.apache.http.conn.ssl.SSLContexts;<br>import org.apache.http.conn.ssl.TrustSelfSignedStrategy;<br>import org.apache.http.entity.ContentType;<br>import org.apache.http.entity.mime.MultipartEntityBuilder;<br>import org.apache.http.entity.mime.content.FileBody;<br>import org.apache.http.entity.mime.content.StringBody;<br>import org.apache.http.impl.client.CloseableHttpClient;<br>import org.apache.http.impl.client.HttpClients;<br>import org.apache.http.message.BasicNameValuePair;<br>import org.apache.http.util.EntityUtils;<br>import org.junit.Test; </p>
+<p>`import java.io.File;<br>import java.io.FileInputStream;<br>import java.io.IOException;<br>import java.io.UnsupportedEncodingException;<br>import java.security.KeyManagementException;<br>import java.security.KeyStore;<br>import java.security.KeyStoreException;<br>import java.security.NoSuchAlgorithmException;<br>import java.security.cert.CertificateException;<br>import java.util.ArrayList;<br>import java.util.List;<br>import javax.net.ssl.SSLContext;<br>import org.apache.http.HttpEntity;<br>import org.apache.http.NameValuePair;<br>import org.apache.http.ParseException;<br>import org.apache.http.client.ClientProtocolException;<br>import org.apache.http.client.entity.UrlEncodedFormEntity;<br>import org.apache.http.client.methods.CloseableHttpResponse;<br>import org.apache.http.client.methods.HttpGet;<br>import org.apache.http.client.methods.HttpPost;<br>import org.apache.http.conn.ssl.SSLConnectionSocketFactory;<br>import org.apache.http.conn.ssl.SSLContexts;<br>import org.apache.http.conn.ssl.TrustSelfSignedStrategy;<br>import org.apache.http.entity.ContentType;<br>import org.apache.http.entity.mime.MultipartEntityBuilder;<br>import org.apache.http.entity.mime.content.FileBody;<br>import org.apache.http.entity.mime.content.StringBody;<br>import org.apache.http.impl.client.CloseableHttpClient;<br>import org.apache.http.impl.client.HttpClients;<br>import org.apache.http.message.BasicNameValuePair;<br>import org.apache.http.util.EntityUtils;<br>import org.junit.Test;</p>
 <p>public class HttpClientTest {  </p>
 <pre><code>@Test  
 public void jUnitTest() {  
     get();  
 }  
 
-/** 
- * HttpClient连接SSL 
+/**
+ * HttpClient连接SSL
  */  
 public void ssl() {  
     CloseableHttpClient httpclient = null;  
@@ -446,8 +446,8 @@ public void ssl() {
     }  
 }  
 
-/** 
- * post方式提交表单（模拟用户登录请求） 
+/**
+ * post方式提交表单（模拟用户登录请求）
  */  
 public void postForm() {  
     // 创建默认的httpClient实例.    
@@ -490,8 +490,8 @@ public void postForm() {
     }  
 }  
 
-/** 
- * 发送 post请求访问本地应用并根据传递参数不同返回不同结果 
+/**
+ * 发送 post请求访问本地应用并根据传递参数不同返回不同结果
  */  
 public void post() {  
     // 创建默认的httpClient实例.    
@@ -533,8 +533,8 @@ public void post() {
     }  
 }  
 
-/** 
- * 发送 get请求 
+/**
+ * 发送 get请求
  */  
 public void get() {  
     CloseableHttpClient httpclient = HttpClients.createDefault();  
@@ -576,8 +576,8 @@ public void get() {
     }  
 }  
 
-/** 
- * 上传文件 
+/**
+ * 上传文件
  */  
 public void upload() {  
     CloseableHttpClient httpclient = HttpClients.createDefault();  
@@ -616,7 +616,7 @@ public void upload() {
         }  
     }  
 }  
-</code></pre><p>}  </p>
+</code></pre><p>}</p>
 
       
     </div>
